@@ -19,7 +19,6 @@ airing_shows = ["Fate","Shingeki no Bahamut","Kakegurui","Musekinin","Ballroom e
 for  i in feed:
     for x in airing_shows:
         if x in i.title and "720" in i.title:
-
             download_and_open(i)
 while 1:
-    time.sleep(180)
+    time.sleep(10)
