@@ -9,8 +9,8 @@ def download_and_open(i):
         print i.title + ' has already been downloaded'
     else:
         print 'Downloading '+ i.title
-        wget.download(i.link, "\Animu Torrents\\"+i.title+".torrent")
-        os.startfile("\Animu Torrents\\"+i.title+".torrent")
+        wget.download(i.link, "Animu Torrents\\"+i.title+".torrent")
+        os.startfile(".\Animu Torrents\\"+i.title+".torrent")
 
 
 while 1:
