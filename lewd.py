@@ -20,5 +20,6 @@ while 1:
     feed = feedparser.parse(url).entries
     for  i in feed:
         for x in airing_shows.keys():
+            show = x + ' ' + str(airing_shows[x])
             if show in i.title and "720" in i.title:
                 download_and_open(i)
